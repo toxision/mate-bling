@@ -1,0 +1,6 @@
+#!/bin/bash
+
+installed=$(dpkg-query -l | wc -l)
+available=$(aptitude search \~U | wc -l)
+
+echo "📦 $installed⏸ ⭐ $available"

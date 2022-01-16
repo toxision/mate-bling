@@ -1,0 +1,7 @@
+#!/bin/bash
+
+follows=$(cat .cache/mastodonstats.cron | sed -n 1p)
+followers=$(cat .cache/mastodonstats.cron | sed -n 2p)
+statuses=$(cat .cache/mastodonstats.cron | sed -n 3p)
+
+echo "🐘 fwers/ing:$followers/$follows ⏸  Toots: $statuses ║"

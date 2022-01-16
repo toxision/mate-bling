@@ -1,0 +1,5 @@
+#!/bin/bash
+
+uname=$(uname -r | cut -c 1-9)
+
+echo "🐧 $uname ║"

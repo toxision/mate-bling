@@ -1,0 +1,5 @@
+#! /bin/bash
+
+disk_home=$(du -s --si ~/ | awk '{print $1B}')
+
+echo "🏠 $disk_home""B ║"

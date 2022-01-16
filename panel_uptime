@@ -1,0 +1,5 @@
+#!/bin/bash
+
+hours=$(cat /proc/uptime | awk '{print int($1/60/60)}')
+days=$(cat /proc/uptime | awk '{print int($1/60/60/24)}')
+echo -e "🕰️  $hours \bh / $days \bd ║"
