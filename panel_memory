@@ -1,0 +1,5 @@
+#!/bin/bash
+
+free=$(free -h --si | sed -n 2p | awk '{print $3+$5}')
+
+echo "💾 $free""MB ║"
