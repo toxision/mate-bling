@@ -11,7 +11,7 @@ elif
 	status="⏸️"
 elif
 	[ "$state" = STOP ]; then
-	echo "🛑 moc stopped ║"
+	echo "🛑 moc idling ║"
 	exit
 else
 	echo "🎶 moc not running ║"
